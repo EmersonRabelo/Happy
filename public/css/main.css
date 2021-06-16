@@ -1,0 +1,35 @@
+/* Oque é uma regra css? */
+/* MOBILE FIRST APPLICATION */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    color: white;
+}
+
+:root {
+/*
+ - 16px é padrão do HTML, então, neste caso quero apenas 10px,
+vou utlizar a porcentagem, que é equivalente a 62.5% de 16px = 10px;
+ - Ou para saber a porcentagem que deseja, basta dividir o valor desejado por 16:
+ 16/10 = 0.625 e multiplicar por 100 = 62.5(%).
+*/
+    font-size: 62.5%;
+}
+
+body, input, button, textarea{
+/*    - "em" utiliza como referencia a tag "mãe".
+    - "rem" utiliza como referencia o root: HTML (16px como padrão).
+*/
+    font: 400 1.8rem/1 'Nunito', sans-serif;
+
+/*  font-weight: 400;
+    font-size: 18px;
+    line-height: 1;
+    font-family: 'Nunito', sans-serif;
+*/
+}
